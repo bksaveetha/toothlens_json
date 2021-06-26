@@ -1,0 +1,60 @@
+{
+
+    "medicine_that_reduce_salaiva": "Yes",
+    "chemo_radiation_therapy": "Yes",
+    "Diabetes": "Yes",
+    "pregnancy_and_hormonal_changes": "Yes",
+    "Acid reflux": "No",
+    "Fluoride exposure": [
+        "Water",
+        "Supplements"
+    ],
+    "Special_healthcare_need": [
+        "Physical",
+        "Mental "
+    ],
+    "Drug/Alcohol": "Yes",
+    "Family history of cavities and gum infections": "Yes",
+    "osteroporosis in women": "Yes",
+
+    "Daily drinking water consumption": "at mealtimes only",
+
+
+    "Sugary food and drinks": "primarily at mealtimes",
+    "Smoking and tobacco use": "No",
+    "Toothbrushing": "twice daily",
+    "Flossing": "twice daily",
+    "Mouthwash": "twice daily",
+    "Replace toothbrush": "once in 3 months",
+
+
+
+
+
+
+
+
+
+    "Cavities or treatment for cavities in last 36 months": "nil",
+    "Dental Scaling/Gum treatment done ": "within one year",
+    "Braces/Aligner treatments currently": "aligner",
+    "Missing teeth due to cavities or gum problems in last 36 months": "no",
+    "Crowns/fixed and removable tooth replacements done before 36 months": "no",
+    "unhealed mouth ulcer or swelling  currently": "10-14 days",
+    "gum bleeding present currently": "occasionally",
+    "pain/sensitivity in any tooth currently": "occasionally",
+    "food getting stuck in teeth currently": "occasionally",
+
+
+
+
+
+
+
+
+    "Endocarditis and Cardiovascular disease": "good dental health",
+    "Premature birth and low weight in children": "good dental health",
+    "Covid complications": "good dental health",
+    "Pneumonia": "good dental health",
+    "skin problems": "good dental health"
+}
