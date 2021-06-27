@@ -1,19 +1,13 @@
 {
-
+    "Age": "less than 30",
     "medicine_that_reduce_salaiva": "Yes",
     "chemo_radiation_therapy": "Yes",
     "Diabetes": "Yes",
     "pregnancy_and_hormonal_changes": "Yes",
-    "Acid reflux": "No",
-    "Fluoride exposure": [
-        "Water",
-        "Supplements"
-    ],
-    "Special_healthcare_need": [
-        "Physical",
-        "Mental "
-    ],
-    "Drug/Alcohol": "Yes",
+    "Acid reflux": "Yes",
+    "Fluoride exposure": "Yes",
+    "Special_healthcare_need": "No",
+    "Drug/Alcohol": "No",
     "Family history of cavities and gum infections": "Yes",
     "osteroporosis in women": "Yes",
 
@@ -35,7 +29,7 @@
 
 
 
-    "Cavities or treatment for cavities in last 36 months": "nil",
+    "Cavities or treatment for cavities in last 36 months": "more then 3 cavities",
     "Dental Scaling/Gum treatment done ": "within one year",
     "Braces/Aligner treatments currently": "aligner",
     "Missing teeth due to cavities or gum problems in last 36 months": "no",
