@@ -1,5 +1,5 @@
 {
-    "Age": "less than 30",
+    "Age": 30,
     "medicine_that_reduce_salaiva": "Yes",
     "chemo_radiation_therapy": "Yes",
     "Diabetes": "Yes",
