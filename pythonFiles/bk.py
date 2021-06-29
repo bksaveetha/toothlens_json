@@ -2,18 +2,18 @@ import json
 
 
 json_object = {
-    "Age": 35,
+    "Age": 30,
+    "medcines that reduce salaiva" : "Yes",
     "medicine_that_reduce_salaiva": "Yes",
     "chemo_radiation_therapy": "Yes",
+    "Fluoride exposure": "Yes",
     "Diabetes": "Yes",
     "pregnancy_and_hormonal_changes": "Yes",
     "Acid reflux": "Yes",
-    "Fluoride exposure": "Yes",
     "Special_healthcare_need": "No",
     "Drug/Alcohol": "No",
     "Family history of cavities and gum infections": "Yes",
     "osteroporosis in women": "Yes",
-
     "Daily drinking water consumption": "at mealtimes only",
 
 
@@ -66,9 +66,34 @@ def GeneralHealth(json_object):
     if "Age" in json_object.keys():
         if json_object["Age"] < 30:
             new_object["Age"] = "Low"
-            
+
+        elif json_object["Age"] > 60:
+            new_object["Age"] = "High"
+           
         else:
             new_object["Age"] = "Medium"
+
+
+    if "medcines that reduce salaiva" in json_object.keys():
+        if json_object["medcines that reduce salaiva"] == "Yes":
+            new_object["medcines that reduce salaiva"] = "Medium"
+        else:
+            new_object["medcines that reduce salaiva"]= "Low"
+
+
+    if "chemo_radiation_therapy" in json_object.keys():
+        if json_object["chemo_radiation_therapy"] == "Yes":
+            new_object["chemo_radiation_therapy"] = "High"
+        else:
+            new_object["chemo_radiation_therapy"] = "Low"
+    
+    
+    
+    if "pregnancy_and_hormonal_changes" in json_object.keys():
+        if json_object["pregnancy_and_hormonal_changes"] == "Yes":
+            new_object["pregnancy_and_hormonal_changes"] = "Medium"
+        else:
+            new_object["pregnancy_and_hormonal_changes"] = "Low"
         
         
         
@@ -82,20 +107,15 @@ def GeneralHealth(json_object):
 
 
 
-    if "chemo_radiation_therapy" in json_object.keys():
-        if json_object["chemo_radiation_therapy"] == "Yes":
-            new_object["chemo_radiation_therapy"] = "High"
+
+    if "Acid reflux" in json_object.keys():
+        if json_object["Acid reflux"] == "Yes":
+            new_object["Acid reflux"] = "Medium"
         else:
-            new_object["chemo_radiation_therapy"] = "Low or Medium"
+            new_object["Acid reflux"] = "Low"
+
 
     
-   
-
-
-
-
-
-
     if "Fluoride exposure" in json_object.keys():
         if json_object["Fluoride exposure"] == "Yes":
             new_object["Fluoride exposure"] = "Low"
@@ -115,46 +135,11 @@ def GeneralHealth(json_object):
 
 
 
-
-
-
-
-
-
-    if "medicine_that_reduce_salaiva" in json_object.keys():
-        if json_object["medicine_that_reduce_salaiva"] == "Yes":
-            new_object["medicine_that_reduce_salaiva"] = "Medium"
-        else:
-            new_object["medicine_that_reduce_salaiva"] = "Low"
-
-
-
-
-
-
-    if "pregnancy_and_hormonal_changes" in json_object.keys():
-        if json_object["pregnancy_and_hormonal_changes"] == "Yes":
-            new_object["pregnancy_and_hormonal_changes"] = "Medium"
-        else:
-            new_object["pregnancy_and_hormonal_changes"] = "Low"
-
-
-
-
-
-    if "Acid reflux" in json_object.keys():
-        if json_object["Acid reflux"] == "No":
-            new_object["Acid reflux"] = "Low"
-        else:
-            new_object["Acid reflux"] = "Medium"
-
-
     if "Drug/Alcohol" in json_object.keys():
         if json_object["Drug/Alcohol"] == "No":
             new_object["Drug/Alcohol"] = "Low"
         else:
             new_object["Drug/Alcohol"] = "Medium"
-
 
 
     if "Family history of cavities and gum infections" in json_object.keys():
@@ -215,14 +200,14 @@ def GeneralHealth(json_object):
         if json_object["Flossing"] == "twice daily":
             new_object["Flossing"] = "Low"
         else:
-            new_object["Flossing"] = "High"
+            new_object["Flossing"] = "Medium"
 
 
     if "Mouthwash" in json_object.keys():
         if json_object["Mouthwash"] == "twice daily":
             new_object["Mouthwash"] = "Low"
         else:
-            new_object["Mouthwash"] = "High"
+            new_object["Mouthwash"] = "Medium"
     
     if "Replace toothbrush" in json_object.keys():
         if json_object["Replace toothbrush"] == "once in 3 months":
@@ -248,27 +233,27 @@ def GeneralHealth(json_object):
         if json_object[ "Dental Scaling/Gum treatment done "] == "within one year":
             new_object[ "Dental Scaling/Gum treatment done "] = "Low"
         else:
-            new_object[ "Dental Scaling/Gum treatment done "] = "Medium"
+            new_object[ "Dental Scaling/Gum treatment done "] = "High"
 
 
     if "Braces/Aligner treatments currently" in json_object.keys():
         if json_object["Braces/Aligner treatments currently"] == "aligner":
             new_object["Braces/Aligner treatments currently"] = "Medium"
         else:
-            new_object["Braces/Aligner treatments currently"] = "Low"
+            new_object["Braces/Aligner treatments currently"] = "High"
 
 
     if "Missing teeth due to cavities or gum problems in last 36 months" in json_object.keys():
         if json_object["Missing teeth due to cavities or gum problems in last 36 months"] == "no":
            new_object["Missing teeth due to cavities or gum problems in last 36 months"] = "Low"
         else:
-            new_object["Missing teeth due to cavities or gum problems in last 36 months"] = "high"
+            new_object["Missing teeth due to cavities or gum problems in last 36 months"] = "Medium"
 
     if "Crowns/fixed and removable tooth replacements done before 36 months" in json_object.keys():
         if json_object["Crowns/fixed and removable tooth replacements done before 36 months"] == "no":
             new_object["Crowns/fixed and removable tooth replacements done before 36 months"] = "Low"
         else:
-            new_object["Crowns/fixed and removable tooth replacements done before 36 months"] = "high"
+            new_object["Crowns/fixed and removable tooth replacements done before 36 months"] = "Medium"
 
 
     if "unhealed mouth ulcer or swelling  currently" in json_object.keys():
