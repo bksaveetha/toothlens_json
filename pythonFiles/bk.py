@@ -431,7 +431,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Brushing-normal toothbrush"] == "recommend to brush for 2 minutes in morning and night":
             Dental_object["Brushing-normal toothbrush"] = 1
         else:
-            Dental_object["Brushing-normal toothbrush"] = "Nil"
+            Dental_object["Brushing-normal toothbrush"] = 0
 
 
 
@@ -440,20 +440,20 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Brushing-power toothbrush"] == "recommend to brush for 2 minutes in morning and night":
             Dental_object["Brushing-power toothbrush"] = 2
         else:
-            Dental_object["Brushing-power toothbrush"] = "Nil"
+            Dental_object["Brushing-power toothbrush"] = 0
 
 
     if "Regular floss" in sheet_object.keys():
         if sheet_object["Regular floss"] == "once a day":
             Dental_object["Regular floss"] = 1
         else:
-            Dental_object["Regular floss"] = "Nil"
+            Dental_object["Regular floss"] = 0
 
     if "Waterfloss" in sheet_object.keys():
         if sheet_object["Waterfloss"] == "2-3 times a  week":
             Dental_object["Waterfloss"] = 2
         else:
-            Dental_object["Waterfloss"] = "Nil"
+            Dental_object["Waterfloss"] = 0
 
 
 
@@ -461,7 +461,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Antibacterial rinse"] == "twice a day for severe cavities/gum infection and bad breadth":
             Dental_object["Antibacterial rinse"] = 1
         else:
-            Dental_object["Antibacterial rinse"] = "Nil"
+            Dental_object["Antibacterial rinse"] = 0
 
 
 
@@ -469,7 +469,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Sugary food/drinks"] == "at meal times only":
             Dental_object["Sugary food/drinks"] = 2
         else:
-            Dental_object["Sugary food/drinks"] = "Nil"
+            Dental_object["Sugary food/drinks"] = 0
 
 
 
@@ -477,7 +477,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Drinking plain water"] == "multiple times a day":
             Dental_object["Drinking plain water"] = 2
         else:
-            Dental_object["Drinking plain water"] = "Nil"
+            Dental_object["Drinking plain water"] = 0
 
 
 
@@ -485,7 +485,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Rinsing of mouth with water"] == "multiple times a day":
             Dental_object["Rinsing of mouth with water"] = 2
         else:
-            Dental_object["Rinsing of mouth with water"] = "Nil"
+            Dental_object["Rinsing of mouth with water"] = 0
     
 
 
@@ -496,7 +496,7 @@ def DailyDentalHealth(sheet_object):
         elif sheet_object["Change of toothbrush"] == "6 months back":
             Dental_object["Change of toothbrush"] = 1
         else:
-            Dental_object["Change of toothbrush"] = "Nil"
+            Dental_object["Change of toothbrush"] = 0
 
 
 
@@ -507,7 +507,7 @@ def DailyDentalHealth(sheet_object):
         if sheet_object["Smoking"] == "a few times in a week":
             Dental_object["Smoking"] = 2
         else:
-            Dental_object["Smoking"] = "Nil"
+            Dental_object["Smoking"] = 0
 
 
 
@@ -519,7 +519,7 @@ def DailyDentalHealth(sheet_object):
         elif sheet_object["Dental Visit"] == "more than a year":
             Dental_object["Dental Visit"] = -1
         else:
-            Dental_object["Dental Visit"] = "Nil"
+            Dental_object["Dental Visit"] = 0
 
 
     if "Medical issue" in sheet_object.keys():
@@ -530,7 +530,7 @@ def DailyDentalHealth(sheet_object):
         elif sheet_object["Medical issue"] == "Poor control":
             Dental_object["Medical issue"] = -1
         else:
-            Dental_object["Medical issue"] = "Nil"
+            Dental_object["Medical issue"] = 0
 
 
     if "Toothlens check" in sheet_object.keys():
@@ -542,7 +542,7 @@ def DailyDentalHealth(sheet_object):
             Dental_object["Toothlens check"] = 3
 
         else:
-            Dental_object["Toothlens check"] = "Nil"
+            Dental_object["Toothlens check"] = 0
 
     print(Dental_object)
 print(DailyDentalHealth(sheet_object))
